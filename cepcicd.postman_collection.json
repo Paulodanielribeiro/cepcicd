@@ -97,7 +97,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test('it should must not save a zip code with an invalid address',()=>{\r",
+							"pm.test('it should  not save a zip code with an invalid address',()=>{\r",
 							"    pm.response.to.have.status(400)\r",
 							"    const response = pm.response.json()\r",
 							"    const {mensagensDeErro} = response\r",
@@ -113,7 +113,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"cep\": \"79200000\",\r\n    \"logradouro\": \"Aquidauana\"\r\n}",
+					"raw": "{\r\n    \"cep\": \"79200-000\",\r\n    \"logradouro\": \"\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -251,7 +251,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test('it should rmust retrieve the zip code of a previously registered street',()=>{\r",
+							"pm.test('it should must retrieve the zip code of a previously registered street',()=>{\r",
 							"    pm.response.to.have.status(200)\r",
 							"    const response = pm.response.json()\r",
 							"    const logradouro = 'Aquidauana';\r",
@@ -344,7 +344,7 @@
 	"variable": [
 		{
 			"key": "baseURL",
-			"value": "https://cepcicd.vercel.app",
+			"value": "http://localhost:3000",
 			"type": "string"
 		}
 	]
