@@ -7,6 +7,23 @@
 	},
 	"item": [
 		{
+			"name": "delete os bancos de dados",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/ceps",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"ceps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "deve salvar um CEP com dados válidos",
 			"event": [
 				{
