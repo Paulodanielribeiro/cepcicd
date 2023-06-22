@@ -344,7 +344,7 @@
 	"variable": [
 		{
 			"key": "baseURL",
-			"value": "http://localhost:3000",
+			"value": "https://cepcicd.vercel.app",
 			"type": "string"
 		}
 	]
