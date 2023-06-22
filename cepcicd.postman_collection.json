@@ -13,7 +13,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test('it should must save a zip code with valid data',()=>{\r",
+							"pm.test('it should  save a zip code with valid data',()=>{\r",
 							"    pm.response.to.have.status(201)\r",
 							"    const response = pm.response.json()\r",
 							"    const {mensagem} = response\r",
@@ -55,7 +55,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test('it should must not save a zip code with an invalid zip code number',()=>{\r",
+							"pm.test('it should  not save a zip code with an invalid zip code number',()=>{\r",
 							"    pm.response.to.have.status(400)\r",
 							"    const response = pm.response.json()\r",
 							"    const {mensagensDeErro} = response\r",
@@ -139,7 +139,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test('it should must retrieve the address of a previously registered zip code',()=>{\r",
+							"pm.test('it should  retrieve the address of a previously registered zip code',()=>{\r",
 							"    pm.response.to.have.status(200)\r",
 							"    const response = pm.response.json()\r",
 							"    const {endereco} = response\r",
@@ -215,7 +215,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test('it should must not retrieve the address of a zip code with an invalid format',()=>{\r",
+							"pm.test('it should  not retrieve the address of a zip code with an invalid format',()=>{\r",
 							"    pm.response.to.have.status(400)\r",
 							"    const response = pm.response.json()\r",
 							"    const {mensagem} = response\r",
@@ -251,7 +251,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test('it should must retrieve the zip code of a previously registered street',()=>{\r",
+							"pm.test('it should  retrieve the zip code of a previously registered street',()=>{\r",
 							"    pm.response.to.have.status(200)\r",
 							"    const response = pm.response.json()\r",
 							"    const logradouro = 'Aquidauana';\r",
@@ -344,7 +344,7 @@
 	"variable": [
 		{
 			"key": "baseURL",
-			"value": "https://cepcicd.vercel.app/",
+			"value": "https://cepcicd.vercel.app",
 			"type": "string"
 		}
 	]
